@@ -5,7 +5,7 @@ import About from "./about";
 import Flights from "./flights";
 import WhoWeAre from "./whoweare";
 import Impact from "./impact";
-import "./Router.css"; // If you made a CSS file
+import "./router.css"; // If you made a CSS file
 
 export default function App() {
   return (
