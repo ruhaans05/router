@@ -20,16 +20,16 @@ const team = [
 
 const WhoWeAre = () => {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16 text-center">
-      <h1 className="text-4xl font-bold mb-12 text-purple-700">Who We Are</h1>
+    <div className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-white">
+      <h1 className="text-4xl font-bold text-purple-700 mb-12">Who We Are</h1>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="flex flex-wrap justify-center gap-8 max-w-5xl">
         {team.map((member) => (
-          <div key={member.name} className="bg-white rounded-xl shadow-lg p-6 text-center">
+          <div key={member.name} className="bg-white rounded-xl shadow-lg p-6 w-64">
             <img
               src={member.img}
               alt={member.name}
-              className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+              className="w-24 h-24 mx-auto rounded-full object-cover mb-4"
             />
             <h2 className="text-xl font-semibold text-gray-800">{member.name}</h2>
             <p className="text-indigo-600">{member.role}</p>
