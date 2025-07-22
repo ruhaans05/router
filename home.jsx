@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className="h-screen bg-gradient-to-br from-indigo-50 via-white to-indigo-100 flex flex-col justify-center items-center text-center px-6">
+    <div className="h-screen bg-gradient-to-br from-indigo-50 via-white to-indigo-100 flex flex-col justify-center items-center text-center px-6 text-center">
       <h1 className="text-5xl font-bold text-indigo-700 mb-4">Welcome to StartupX</h1>
       <p className="text-lg text-gray-700 mb-8 max-w-xl">
         Smart routing. Affordable travel. Data-powered journeys. Explore our vision.
