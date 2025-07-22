@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./home";
 import About from "./about";
-import Flights from "./flights";
 import WhoWeAre from "./whoweare";
 import Impact from "./impact";
 import "./router.css"; // If you made a CSS file
@@ -24,7 +23,6 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/flights" element={<Flights />} />
           <Route path="/who-we-are" element={<WhoWeAre />} />
           <Route path="/impact" element={<Impact />} />
         </Routes>
