@@ -13,7 +13,6 @@ export default function App() {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
-          <li><Link to="/flights">Manage Flights</Link></li>
           <li><a href="https://routermaps.streamlit.app/" target="_blank" rel="noopener noreferrer">Transport App</a></li>
           <li><Link to="/who-we-are">Who We Are</Link></li>
           <li><Link to="/impact">Impact</Link></li>
