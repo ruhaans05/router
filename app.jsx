@@ -1,42 +1,70 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import Home from "./home";
 import About from "./about";
 import WhoWeAre from "./whoweare";
 import Impact from "./impact";
-import "./router.css"; // optional: remove if using Tailwind only
+import "./router.css"; // optional, safe to remove if unused
 
 export default function App() {
   return (
     <Router>
       {/* NAVIGATION BAR */}
-      <nav className="bg-white shadow-md">
+      <nav className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-indigo-600">
-            <Link to="/">StartupX</Link>
+          <div className="text-2xl font-extrabold text-indigo-700">
+            <NavLink to="/">StartupX</NavLink>
           </div>
-          <ul className="flex space-x-6 text-gray-700 font-medium">
+          <ul className="flex flex-wrap gap-4 text-gray-700 font-medium text-lg">
             <li>
-              <Link to="/" className="hover:text-indigo-600 transition">Home</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "text-indigo-700 font-semibold" : "hover:text-indigo-600"
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/about" className="hover:text-indigo-600 transition">About</Link>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "text-indigo-700 font-semibold" : "hover:text-indigo-600"
+                }
+              >
+                About
+              </NavLink>
             </li>
             <li>
               <a
                 href="https://routermaps.streamlit.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-indigo-600 transition"
+                className="hover:text-indigo-600"
               >
                 Transport App
               </a>
             </li>
             <li>
-              <Link to="/who-we-are" className="hover:text-indigo-600 transition">Who We Are</Link>
+              <NavLink
+                to="/who-we-are"
+                className={({ isActive }) =>
+                  isActive ? "text-indigo-700 font-semibold" : "hover:text-indigo-600"
+                }
+              >
+                Who We Are
+              </NavLink>
             </li>
             <li>
-              <Link to="/impact" className="hover:text-indigo-600 transition">Impact</Link>
+              <NavLink
+                to="/impact"
+                className={({ isActive }) =>
+                  isActive ? "text-indigo-700 font-semibold" : "hover:text-indigo-600"
+                }
+              >
+                Impact
+              </NavLink>
             </li>
           </ul>
         </div>
