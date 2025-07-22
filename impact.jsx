@@ -20,7 +20,7 @@ const Impact = () => {
         </div>
       </div>
 
-      <p className="mt-12 text-gray-700 text-lg">
+      <p className="mt-12 text-gray-700 text-lg max-w-2xl mx-auto">
         We're making transit more efficient for everyone—one optimized trip at a time.
       </p>
     </div>
