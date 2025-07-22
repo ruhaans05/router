@@ -1,0 +1,5 @@
+cd router  # (or whatever folder your project is in)
+npm install
+npm run dev
+
+# then copy the localhost link
