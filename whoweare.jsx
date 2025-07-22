@@ -20,9 +20,9 @@ const team = [
 
 const WhoWeAre = () => {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-bold text-center mb-12 text-purple-700">Who We Are</h1>
-      
+    <div className="max-w-6xl mx-auto px-6 py-16 text-center">
+      <h1 className="text-4xl font-bold mb-12 text-purple-700">Who We Are</h1>
+
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
         {team.map((member) => (
           <div key={member.name} className="bg-white rounded-xl shadow-lg p-6 text-center">
